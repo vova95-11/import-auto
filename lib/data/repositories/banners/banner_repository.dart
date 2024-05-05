@@ -15,7 +15,7 @@ class BannerRepository extends GetxController {
   /// Get all order related to current User
   Future<List<BannerModel>> fetchBanners() async {
     try {
-      final result = await _db.collection('Banners').where('active', isEqualTo: true).get();
+      final result = await _db.collection('Banners').where('Active', isEqualTo: true).get();
       return result.docs.map((documentSnapshot) => BannerModel.fromSnapshot(documentSnapshot)).toList();
     } on FirebaseException catch (e) {
       throw UFirebaseException(e.code).message;

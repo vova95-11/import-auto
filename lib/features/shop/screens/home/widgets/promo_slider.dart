@@ -17,7 +17,12 @@ class UPromoSlider extends StatelessWidget {
     return Obx(
       () {
         // Loader
-        if (controller.isLoading.value) return const UShimmerEffect(width: double.infinity, height: 200);
+        if (controller.isLoading.value) {
+          return const Padding(
+            padding: EdgeInsets.symmetric(horizontal: USizes.defaultSpace24),
+            child: UShimmerEffect(width: double.infinity, height: 200),
+          );
+        }
 
         // No data found
         if (controller.banners.isEmpty) {

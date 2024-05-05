@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "28889911457",
+    "project_id": "unit-auto",
+    "storage_bucket": "unit-auto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28889911457:android:9fbe49a9d64e896f1d20e0",
+        "android_client_info": {
+          "package_name": "com.example.unit_auto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3ebBAM3UD6Ym8mFM_z7Hq__IWT7H-lXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
