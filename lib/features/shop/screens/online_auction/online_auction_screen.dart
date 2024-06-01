@@ -20,35 +20,38 @@ class OnlineAuctionScreen extends StatelessWidget {
         text: UTexts.onlineAuctionAppBarSubTitle,
         showBackArrow: true,
       ),
-      body: CustomScrollView(
-        slivers: <Widget>[
-          const UDetailAppBarSearch(),
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: USizes.defaultSpace24),
-              child: Column(
-                children: [
-                  /// Curtain // Шторка
-                  const Curtain(),
+      body: Column(
+        children: [
+          /// Curtain // Шторка
+          const Curtain(),
+          CustomScrollView(
+            slivers: <Widget>[
+              const UDetailAppBarSearch(),
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: USizes.defaultSpace24),
+                  child: Column(
+                    children: [
+                      /// -- Japan Brands
+                      USectionHeading(title: 'Япония', showActionButton: false),
+                      SizedBox(height: USizes.spaceBtwItems16),
 
-                  /// -- Japan Brands
-                  USectionHeading(title: 'Япония', showActionButton: false),
-                  SizedBox(height: USizes.spaceBtwItems16),
+                      /// -- Японские брэнды авто
+                      BrandGridview(),
+                      SizedBox(height: USizes.spaceBtwSections32),
 
-                  /// -- Японские брэнды авто
-                  BrandGridview(),
-                  SizedBox(height: USizes.spaceBtwSections32),
+                      /// -- Other Brands
+                      USectionHeading(title: 'Другие страны', showActionButton: false),
+                      SizedBox(height: USizes.spaceBtwItems16),
 
-                  /// -- Other Brands
-                  USectionHeading(title: 'Другие страны', showActionButton: false),
-                  SizedBox(height: USizes.spaceBtwItems16),
-
-                  /// -- Брэнды авто других стран
-                  BrandGridview(),
-                  SizedBox(height: USizes.appBarHeight),
-                ],
+                      /// -- Брэнды авто других стран
+                      BrandGridview(),
+                      SizedBox(height: USizes.appBarHeight),
+                    ],
+                  ),
+                ),
               ),
-            ),
+            ],
           ),
         ],
       ),

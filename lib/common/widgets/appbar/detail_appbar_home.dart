@@ -19,7 +19,7 @@ class UDetailAppBarHome extends StatelessWidget {
       flexibleSpace: UCurvedEdgesWidget15(
         child: Container(
           color: const Color.fromRGBO(130, 183, 159, 1),
-          height: 226,
+          height: 206,
           child: const Stack(
             children: [
               Positioned(top: 72, child: UHomeReels()),

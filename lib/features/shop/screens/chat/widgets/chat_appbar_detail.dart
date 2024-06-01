@@ -19,15 +19,10 @@ class UDetailAppBarSearch extends StatelessWidget {
       flexibleSpace: UCurvedEdgesWidget15(
         child: Container(
           color: const Color.fromRGBO(130, 183, 159, 1),
-          height: 226,
-          child: const Stack(
-            children: [
-              /// -- Search Bar
-              Positioned(
-                top: 100,
-                child: const USearchContainer(text: 'Поиск производителя', showBorder: true, showBackground: false),
-              ),
-            ],
+          height: 206,
+          child: Padding(
+            padding: const EdgeInsets.only(top: 60),
+            child: Center(child: const USearchContainer(text: 'Поиск производителя', showBorder: true, showBackground: false)),
           ),
         ),
       ),
