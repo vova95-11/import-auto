@@ -10,7 +10,7 @@ class UDetailAppBarSearch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      expandedHeight: 112.0,
+      expandedHeight: 122.0,
       toolbarHeight: 0,
       backgroundColor: Colors.white,
       elevation: 0.0,
@@ -19,10 +19,10 @@ class UDetailAppBarSearch extends StatelessWidget {
       flexibleSpace: UCurvedEdgesWidget15(
         child: Container(
           color: const Color.fromRGBO(130, 183, 159, 1),
-          height: 220,
+          height: 230,
           child: Stack(
             children: [
-              Positioned(top: 120, child: const USearchContainer(text: 'Поиск производителя', showBorder: true, showBackground: false)),
+              Positioned(top: 130, child: const USearchContainer(text: 'Поиск производителя', showBorder: true, showBackground: false)),
             ],
           ),
         ),
