@@ -46,6 +46,8 @@ class UCircularImage extends StatelessWidget {
                   fit: fit,
                   color: overlayColor,
                   imageUrl: image,
+                  height: 50,
+                  width: 50,
                   progressIndicatorBuilder: (context, url, downloadProgress) => const UShimmerEffect(
                     width: 95,
                     height: 95,

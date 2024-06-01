@@ -17,7 +17,7 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 140,
+        toolbarHeight: 130,
         // backgroundColor: const Color.fromRGBO(130, 183, 159, 1),
         // centerTitle: true,
         automaticallyImplyLeading: false,
@@ -25,12 +25,12 @@ class SettingsScreen extends StatelessWidget {
         flexibleSpace: UCurvedEdgesWidget(
           child: Container(
             color: const Color.fromRGBO(130, 183, 159, 1),
-            height: 140,
+            height: 180,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                const SizedBox(height: USizes.sm8),
+                const SizedBox(height: 50),
                 // Padding(
                 //   padding: const EdgeInsets.symmetric(horizontal: USizes.defaultSpace24),
                 //   child: Text('Настройки', style: Theme.of(context).textTheme.headlineMedium!.apply(color: UColors.white)),

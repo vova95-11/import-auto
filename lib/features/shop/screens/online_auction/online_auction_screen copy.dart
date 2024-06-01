@@ -18,8 +18,8 @@ import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/text_strings.dart';
 
-class OnlineAuctionScreen extends StatelessWidget {
-  const OnlineAuctionScreen({super.key});
+class OnlineAuctionScreen3 extends StatelessWidget {
+  const OnlineAuctionScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {

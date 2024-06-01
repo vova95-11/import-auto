@@ -10,7 +10,7 @@ class UDetailAppBarHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      expandedHeight: 150.0,
+      expandedHeight: 152.0,
       toolbarHeight: 0,
       backgroundColor: Colors.white,
       elevation: 0.0,
@@ -19,10 +19,10 @@ class UDetailAppBarHome extends StatelessWidget {
       flexibleSpace: UCurvedEdgesWidget15(
         child: Container(
           color: const Color.fromRGBO(130, 183, 159, 1),
-          height: 206,
-          child: const Stack(
+          height: 260,
+          child: Stack(
             children: [
-              Positioned(top: 72, child: UHomeReels()),
+              Positioned(top: 120, child: UHomeReels()),
             ],
           ),
         ),

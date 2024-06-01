@@ -78,7 +78,7 @@ class NavigationMenu extends StatelessWidget {
         // ),
       ),
       body: Obx(() => controller.screens[controller.selectedIndex.value]),
-      appBar: UCustomNavigationAppBar(darkMode: darkMode),
+      //  appBar: UCustomNavigationAppBar(darkMode: darkMode),
     );
   }
 }
