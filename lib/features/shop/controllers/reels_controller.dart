@@ -30,6 +30,7 @@ class ReelsController extends GetxController {
       allReels.assignAll(reels);
 
       // Filter featured reels
+      // reels.image != "" // ДОБАВИТЬ ЭТО ВЫРАЖЕНИЕ
       featuredReels.assignAll(allReels.where((reels) => reels.isFeatured).toList());
     } catch (e) {
       ULoaders.errorSnackBar(title: 'Ошибка', message: e.toString());

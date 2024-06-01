@@ -29,7 +29,7 @@ class USearchContainer extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: USizes.defaultSpace24),
         child: Container(
-          width: UDeviceUtils.getScreenWidth(context),
+          width: UDeviceUtils.getScreenWidth(context) - USizes.defaultSpace24 * 2,
           padding: const EdgeInsets.all(USizes.md16),
           decoration: BoxDecoration(
             color: showBackground
@@ -42,7 +42,7 @@ class USearchContainer extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Icon(icon, color: UColors.darkerGrey),
+              Icon(icon, color: dark ? UColors.darkerGrey : Colors.grey),
               const SizedBox(width: USizes.spaceBtwItems16),
               Text(text, style: Theme.of(context).textTheme.bodySmall),
             ],

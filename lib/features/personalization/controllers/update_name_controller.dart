@@ -5,7 +5,7 @@ import 'package:unit_auto/features/personalization/controllers/user_controller.d
 import 'package:unit_auto/features/personalization/screens/profile/profile.dart';
 import 'package:unit_auto/utils/constants/image_strings.dart';
 import 'package:unit_auto/utils/device/loaders.dart';
-import 'package:unit_auto/utils/device/network_manager.dart';
+import 'package:unit_auto/utils/helpers/network_manager.dart';
 import 'package:unit_auto/utils/popups/full_screen_loader.dart';
 
 class UpdateNameController extends GetxController {

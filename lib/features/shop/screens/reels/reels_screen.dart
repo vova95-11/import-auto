@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:unit_auto/common/widgets/appbar/appbar.dart';
 import 'package:unit_auto/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:unit_auto/utils/constants/colors.dart';
@@ -20,7 +21,8 @@ class ReelsScreen extends StatelessWidget {
                 children: [
                   /// Appbar
                   UAppBar(
-                    title: Text(UTexts.balanceAppBarSubTitle, style: Theme.of(context).textTheme.headlineMedium!.apply(color: UColors.white)),
+                    text: UTexts.balanceAppBarSubTitle,
+                    // title: Text(UTexts.balanceAppBarSubTitle, style: Theme.of(context).textTheme.headlineMedium!.apply(color: UColors.white)),
                   ),
                   const SizedBox(height: USizes.spaceBtwSections32),
                 ],

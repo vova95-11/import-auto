@@ -53,10 +53,12 @@ class UCircularImage extends StatelessWidget {
                   ),
                   errorWidget: (context, url, error) => const Icon(Icons.error),
                 )
+              // : Icon(Icons.error),
               : Image(
                   fit: fit,
                   image: AssetImage(image),
                   color: overlayColor,
+                  errorBuilder: (context, error, stackTrace) => const Icon(Icons.error),
                 ),
         ),
       ),

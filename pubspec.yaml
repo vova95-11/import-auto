@@ -70,6 +70,7 @@ flutter:
     - assets/images/user/
     - assets/images/home/
     - assets/images/animations/
+    - assets/images/brands/
 
   #--------------- LOCAL FONTS ---------------#
   fonts:

@@ -32,7 +32,7 @@ class UHomeReels extends StatelessWidget {
         }
 
         return SizedBox(
-          height: 150,
+          height: 105,
           width: MediaQuery.of(context).size.width,
           child: ListView.separated(
             shrinkWrap: true,
@@ -52,25 +52,5 @@ class UHomeReels extends StatelessWidget {
         );
       }),
     );
-
-    // SizedBox(
-    //   height: 95,
-    //   child: ListView.builder(
-    //     itemCount: 6,
-    //     shrinkWrap: true,
-    //     scrollDirection: Axis.horizontal,
-    //     itemBuilder: (_, index) {
-    //       return Padding(
-    //         //padding: const EdgeInsets.only(left: USizes.defaultSpace24),
-    //         padding: EdgeInsetsDirectional.only(start: 12, end: 12),
-    //         child: UReels(
-    //           image: UImages.onBoardingImage1,
-    //           title: 'Добавить',
-    //           onTap: () {},
-    //         ),
-    //       );
-    //     },
-    //   ),
-    // );
   }
 }

@@ -11,7 +11,7 @@ import 'package:unit_auto/features/personalization/screens/profile/widgets/re_au
 import 'package:unit_auto/utils/constants/image_strings.dart';
 import 'package:unit_auto/utils/constants/sizes.dart';
 import 'package:unit_auto/utils/device/loaders.dart';
-import 'package:unit_auto/utils/device/network_manager.dart';
+import 'package:unit_auto/utils/helpers/network_manager.dart';
 import 'package:unit_auto/utils/popups/full_screen_loader.dart';
 
 class UserController extends GetxController {

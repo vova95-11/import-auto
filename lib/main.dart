@@ -8,6 +8,15 @@ import 'package:unit_auto/data/repositories/authentication/authentication_reposi
 import 'package:unit_auto/firebase_options.dart';
 
 Future<void> main() async {
+  // SystemChrome.setSystemUIOverlayStyle(
+  //   const SystemUiOverlayStyle(
+  //     statusBarColor: Colors.transparent,
+  //     systemNavigationBarColor: Colors.transparent,
+  //     statusBarBrightness: Brightness.dark,
+  //     statusBarIconBrightness: Brightness.dark,
+  //   ),
+  // );
+
   /// Widgets Binding
   final WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
 

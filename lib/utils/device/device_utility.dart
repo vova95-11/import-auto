@@ -55,6 +55,11 @@ class UDeviceUtils {
     return kToolbarHeight;
   }
 
+  // Создал Сам, если что удалить!!!
+  static double getAppBarHeightNavigationAppBar() {
+    return 0;
+  }
+
   static double getKeyboardHeight() {
     final viewInsets = MediaQuery.of(Get.context!).viewInsets;
     return viewInsets.bottom;

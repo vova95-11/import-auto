@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:unit_auto/utils/constants/sizes.dart';
 import 'package:unit_auto/utils/constants/text_strings.dart';
-import 'package:unit_auto/utils/helpers/helper_functions.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen({

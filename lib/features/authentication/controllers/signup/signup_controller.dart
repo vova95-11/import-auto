@@ -6,7 +6,7 @@ import 'package:unit_auto/features/authentication/screens/signup/verify_email.da
 import 'package:unit_auto/features/personalization/models/user_model.dart';
 import 'package:unit_auto/utils/constants/image_strings.dart';
 import 'package:unit_auto/utils/device/loaders.dart';
-import 'package:unit_auto/utils/device/network_manager.dart';
+import 'package:unit_auto/utils/helpers/network_manager.dart';
 import 'package:unit_auto/utils/popups/full_screen_loader.dart';
 
 class SignupController extends GetxController {
@@ -40,15 +40,13 @@ class SignupController extends GetxController {
       if (!privacyPolicy.value) {
         ULoaders.warningSnackBar(
           title: "Примите политику конфиденциальности",
-          message:
-              "Чтобы создать учетную запись, Вам необходимо прочитать и принять Политику конфиденциальности и Условия использования",
+          message: "Чтобы создать учетную запись, Вам необходимо прочитать и принять Политику конфиденциальности и Условия использования",
         );
         return;
       }
 
       // Register user in the Firebase Authentication & Save user data in the Firebase
-      final UserCredential =
-          await AuthenticationRepository.instance.registerWithEmailAndPassword(email.text.trim(), password.text.trim());
+      final UserCredential = await AuthenticationRepository.instance.registerWithEmailAndPassword(email.text.trim(), password.text.trim());
 
       // Save Authenticated user data in the Firebase Firestore
       final newUser = UserModel(
@@ -68,9 +66,7 @@ class SignupController extends GetxController {
       UFullScreenLoader.stopLoading();
 
       // Show Success Message
-      ULoaders.successSnackBar(
-          title: 'Поздравляем!',
-          message: 'Ваш аккаунт был создан! Подтвердите адрес электронной почты, чтобы продолжить.');
+      ULoaders.successSnackBar(title: 'Поздравляем!', message: 'Ваш аккаунт был создан! Подтвердите адрес электронной почты, чтобы продолжить.');
 
       // Move to Verify Email Screen
       Get.to(() => VerifyEmailScreen(email: email.text.trim()));

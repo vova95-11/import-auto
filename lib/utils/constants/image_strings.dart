@@ -30,6 +30,9 @@ class UImages {
   // -- Home
   static const String money = "assets/images/home/money.jpg";
 
+  // -- Online Auctions
+  static const String toyota = "assets/images/brands/toyota.png";
+
   // -- Lottie Animations
   static const String docerAnimation = "assets/images/animations/141594-animation-of-docer.json";
   static const String successfullyRegisterAnimation = "assets/images/animations/72462-check-register.json";

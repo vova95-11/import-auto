@@ -5,6 +5,7 @@ import 'package:unit_auto/common/widgets/appbar/appbar.dart';
 import 'package:unit_auto/features/personalization/controllers/update_name_controller.dart';
 import 'package:unit_auto/utils/constants/sizes.dart';
 import 'package:unit_auto/utils/constants/text_strings.dart';
+import 'package:unit_auto/utils/helpers/helper_functions.dart';
 import 'package:unit_auto/utils/validators/validation.dart';
 
 class ChangeName extends StatelessWidget {
@@ -13,11 +14,18 @@ class ChangeName extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(UpdateNameController());
+    final dark = UHelperFunctions.isDarkMode(context);
     return Scaffold(
       /// Custom Appbar
       appBar: UAppBar(
+        text: 'Изменить личные данные',
+        style: Theme.of(context).textTheme.headlineSmall,
         showBackArrow: true,
-        title: Text('Изменить личные данные', style: Theme.of(context).textTheme.headlineSmall),
+        centerTitle: true,
+        shape: dark
+            ? const Border(bottom: BorderSide(color: Color.fromARGB(255, 106, 106, 106), width: 1))
+            : const Border(bottom: BorderSide(color: Color.fromARGB(255, 207, 207, 207), width: 1)),
+        //  title: Text('Изменить личные данные', style: Theme.of(context).textTheme.headlineSmall),
       ),
       body: Padding(
         padding: const EdgeInsets.all(USizes.defaultSpace24),

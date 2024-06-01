@@ -4,7 +4,7 @@ import 'package:unit_auto/data/repositories/authentication/authentication_reposi
 import 'package:unit_auto/features/authentication/screens/password_configuration/reset_password.dart';
 import 'package:unit_auto/utils/constants/image_strings.dart';
 import 'package:unit_auto/utils/device/loaders.dart';
-import 'package:unit_auto/utils/device/network_manager.dart';
+import 'package:unit_auto/utils/helpers/network_manager.dart';
 import 'package:unit_auto/utils/popups/full_screen_loader.dart';
 
 class ForgetPasswordController extends GetxController {

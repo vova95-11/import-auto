@@ -28,8 +28,8 @@ class OfferScreen extends StatelessWidget {
                     children: [
                       /// Appbar
                       UAppBar(
-                        title: Text(UTexts.offerAppBarSubTitle,
-                            style: Theme.of(context).textTheme.headlineMedium!.apply(color: UColors.white)),
+                        text: UTexts.offerAppBarSubTitle,
+                        // title: Text(UTexts.offerAppBarSubTitle, style: Theme.of(context).textTheme.headlineMedium!.apply(color: UColors.white)),
                       ),
                       const SizedBox(height: USizes.spaceBtwSections32),
                     ],
@@ -37,8 +37,7 @@ class OfferScreen extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: USizes.defaultSpace24),
-                  child: Text('Количество вариантов: 4',
-                      style: Theme.of(context).textTheme.bodyMedium!.apply(color: UColors.black, fontWeightDelta: 2)),
+                  child: Text('Количество вариантов: 4', style: Theme.of(context).textTheme.bodyMedium!.apply(color: UColors.black, fontWeightDelta: 2)),
                 ),
               ],
             ),
@@ -85,14 +84,11 @@ class OfferScreen extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                decoration: const BoxDecoration(
-                                    color: Color.fromARGB(110, 126, 202, 136),
-                                    borderRadius: BorderRadius.all(Radius.circular(5))),
+                                decoration: const BoxDecoration(color: Color.fromARGB(110, 126, 202, 136), borderRadius: BorderRadius.all(Radius.circular(5))),
                                 child: Padding(
                                   padding: const EdgeInsets.symmetric(horizontal: USizes.sm8, vertical: USizes.xs4),
                                   child: Text('лот: 50501',
-                                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                                          color: const Color.fromARGB(255, 10, 74, 12), fontWeight: FontWeight.bold)),
+                                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: const Color.fromARGB(255, 10, 74, 12), fontWeight: FontWeight.bold)),
                                 ),
                               ),
                             ],
@@ -104,10 +100,7 @@ class OfferScreen extends StatelessWidget {
                           child: Row(
                             children: [
                               Flexible(
-                                child: Text('G-T MODE NERO SAFETY PLUS',
-                                    maxLines: 2,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: Theme.of(context).textTheme.bodyMedium),
+                                child: Text('G-T MODE NERO SAFETY PLUS', maxLines: 2, overflow: TextOverflow.ellipsis, style: Theme.of(context).textTheme.bodyMedium),
                               ),
                             ],
                           ),

@@ -21,8 +21,9 @@ class ZakazScreen extends StatelessWidget {
                 children: [
                   /// Appbar
                   UAppBar(
-                    title: Text(UTexts.zakazAppBarSubTitle,
-                        style: Theme.of(context).textTheme.headlineMedium!.apply(color: UColors.white)),
+                    text: UTexts.zakazAppBarSubTitle,
+                    //title: Text(UTexts.zakazAppBarSubTitle,
+                    // style: Theme.of(context).textTheme.headlineMedium!.apply(color: UColors.white)),
                   ),
                   const SizedBox(height: USizes.spaceBtwSections32),
                 ],

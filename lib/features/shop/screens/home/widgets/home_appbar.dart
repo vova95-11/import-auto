@@ -1,25 +1,46 @@
 import 'package:flutter/material.dart';
-import 'package:unit_auto/common/widgets/appbar/appbar.dart';
 import 'package:unit_auto/common/widgets/notifications/cart_menu_icon.dart';
 import 'package:unit_auto/utils/constants/colors.dart';
+import 'package:unit_auto/utils/constants/sizes.dart';
 import 'package:unit_auto/utils/constants/text_strings.dart';
+import 'package:unit_auto/utils/device/device_utility.dart';
 
-class UHomeAppBar extends StatelessWidget {
+class UHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   const UHomeAppBar({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    return UAppBar(
-      title: Text(UTexts.homeAppBarSubTitle,
-          style: Theme.of(context).textTheme.headlineMedium!.apply(color: UColors.white)),
+    return AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 0.0,
+      title: Padding(
+        padding: const EdgeInsets.fromLTRB(USizes.defaultSpace24 / 2, USizes.defaultSpace24 / 1.5, USizes.defaultSpace24, 0),
+        child: Text(UTexts.homeAppBarSubTitle, style: Theme.of(context).textTheme.headlineMedium!.apply(color: UColors.white)),
+      ),
       actions: [
-        UCartCounterIcon(
-          onPressed: () {},
-          iconColor: Colors.white,
+        Padding(
+          padding: const EdgeInsets.fromLTRB(USizes.defaultSpace24, USizes.defaultSpace24 / 1.5, USizes.defaultSpace24, 0),
+          child: UCartCounterIcon(
+            onPressed: () {},
+            iconColor: Colors.white,
+          ),
         ),
       ],
+      centerTitle: false,
+      flexibleSpace: Container(
+        decoration: const BoxDecoration(
+          color: Color.fromRGBO(130, 183, 159, 1),
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(USizes.defaultSpace24),
+            bottomRight: Radius.circular(USizes.defaultSpace24),
+          ),
+        ),
+      ),
     );
   }
+
+  @override
+  Size get preferredSize => Size.fromHeight(UDeviceUtils.getAppBarHeight());
 }

@@ -19,6 +19,15 @@ class UColors {
     ],
   );
 
+  static const Gradient appBarGradient = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [
+      Color.fromRGBO(130, 183, 159, 1),
+      Color.fromRGBO(130, 183, 159, 0.3),
+    ],
+  );
+
   // Text Colors
   static const Color textPrimary = Color(0xFF333333);
   static const Color textSecondary = Color(0xFF6C757D);
@@ -26,6 +35,7 @@ class UColors {
 
   // Background Colors
   static const Color light = Color(0xFFF6F6F6);
+  static const Color brightnessDark = Color(0xFF222222);
   static const Color dark = Color(0xFF272727);
   static const Color primaryBackground = Color(0xFFF3F5FF);
 
@@ -58,4 +68,7 @@ class UColors {
   static const Color white = Color(0xFFFFFFFF);
   static const Color orange = Color(0xFFF57C00);
   static const Color red = Color(0xFFD32F2F);
+
+  // OutlineColor
+  static const Color curtainColor = Color.fromARGB(210, 102, 102, 102);
 }

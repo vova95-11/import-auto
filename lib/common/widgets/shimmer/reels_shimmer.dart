@@ -10,7 +10,7 @@ class UReelsShimmer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 150,
+      height: 105,
       width: MediaQuery.of(context).size.width,
       child: ListView.separated(
         shrinkWrap: true,

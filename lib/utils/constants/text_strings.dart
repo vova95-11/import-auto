@@ -8,8 +8,7 @@ class UTexts {
   static const String onBoardingTitle3 = "Вперед";
 
   static const String onBoardingSubTitle1 = "Приложение №1 по заказу Японских автомобилей!";
-  static const String onBoardingSubTitle2 =
-      "Ежедневно на аукционне торгуется более 50 тыс. автомобилей. Ты точно найдешь свой!";
+  static const String onBoardingSubTitle2 = "Ежедневно на аукционне торгуется более 50 тыс. автомобилей. Ты точно найдешь свой!";
   static const String onBoardingSubTitle3 = "Выгодных покупок!";
 
   // -- Authentication Form Text
@@ -45,23 +44,26 @@ class UTexts {
   static const String forgetPasswordSubTitle =
       "Не волнуйтесь, иногда такое бывает, люди забыввают пароль, введите свой адрес электронной почты и мы вышлем Вам ссылку для сброса пароля.";
   static const String confirmEmail = "Подтвердите Email";
-  static const String confirmEmailSubTitle =
-      "Мы отправили письмо на Ваш электронный ящик: подтвердите адрес электронной почты и начинайте поиск автомобиля своей мечты!";
-  static const String emailNotReceivedMessage =
-      "Не получили электронное письмо? Проверьте папку спам или отправьте письмо повторно.";
+  static const String confirmEmailSubTitle = "Мы отправили письмо на Ваш электронный ящик: подтвердите адрес электронной почты и начинайте поиск автомобиля своей мечты!";
+  static const String emailNotReceivedMessage = "Не получили электронное письмо? Проверьте папку спам или отправьте письмо повторно.";
   static const String yourAccountCreatedTitle = "Успех!";
-  static const String yourAccountCreatedSubTitle =
-      "Ваша учетная запись создана. Добро пожаловать в мир Японских автоаукционнов!";
+  static const String yourAccountCreatedSubTitle = "Ваша учетная запись создана. Добро пожаловать в мир Японских автоаукционнов!";
 
   // -- Home
   // static const String homeAppBarSubTitleold = "Reels";
-  static const String homeAppBarSubTitle = "Главная";
+  static const String homeAppBarSubTitle = "Unit: импорт авто";
   // -- Offer
   static const String offerAppBarSubTitle = "Подходящие варианты";
+  // -- Profile
+  static const String profileAppBarSubTitle = "Профиль";
   // -- Zakaz
   static const String zakazAppBarSubTitle = "Оформить заявку";
-  // -- Zakaz
+  // -- Balance
   static const String balanceAppBarSubTitle = "Пополнить баланс";
   static const String depositMoney = "Пополнить";
   static const String historyOfOperations = "История операций";
+  // -- Online Auction
+  static const String onlineAuctionAppBarSubTitle = "Японские автоаукционы";
+  // -- Chat
+  static const String chatAppBarSubTitle = "Чат";
 }
